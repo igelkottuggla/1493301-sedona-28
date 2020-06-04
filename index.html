@@ -9,11 +9,11 @@
 		<header>
  			<nav>
  				<a href="index.html"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта бронирования Седона"></a>
- 				<ul>
- 					<li><a href="">Информация</a></li>
- 					<li><a href="">Фото и видео</a></li>
- 					<li><a href="">Карта штата</a></li>
- 					<li><a href="catalog.html">Гостиницы</a></li>
+        <ul>
+          <li><a href=""> Информация</a></li>
+          <li><a href=""> Фото и видео</a></li>
+          <li><a href="" >Карта штата</a></li>
+          <li><a href="catalog.html"> Гостиницы</a></li>
  				</ul>
  			</nav>
 		</header>
@@ -67,12 +67,21 @@
   			<h2>Заинтересовались?</h2>
    			<p>Укажите предполагаемые даты поездки,<br>
    			и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-   			<button type="button">Поиск гостиницы в Седоне</button>
-				<p>Дата заезда <span>календарь</span></p>
-				<p>Дата выезда <span>календарь</span></p>
-				<p>Взрослые<button type="button">-</button><span>количество</span><button type="button">+</button></p>
-				<p>Дети<button type="button">-</button><span>количество</span><button type="button">+</button></p>
-				<button type="button">Найти</button>
+   			<button type="button" value="search" onclick="">Поиск гостиницы в Седоне</button>
+   			<!---Кнопка «Поиск гостиницы в Седоне» управляет отображением формы поиска гостиницы. Вёрстка блока с формой поиска гостиницы обязательна.--->
+   		 	<form action="https://echo.htmlacademy.ru/courses" method="search">
+					<p>
+						<label for="date">Дата заезда</label><span><input type="text" name="date" placeholder="24.04.2017"> </span><br>
+						<label for="date">Дата выезда</label><span><input type="text" name="date" placeholder="14.06.2017"></span><br>
+					</p>
+					<p>
+						<label for="amount-of-adults">Взрослые</label>
+						<input type="number" name="amount-of-adults" min="1" max="10" step="1" value="2">
+						<label for="amount-of-children">Дети</label>
+						<input type="number" name="amount-of-children" min="0" max="10" step="1" value="0">
+					</p>
+					<input type="submit" value="Найти">
+				</form>
 				<p><a href="">Карта Седоны с результатами поиска</a></p>
    		</section> 
 		</main>
