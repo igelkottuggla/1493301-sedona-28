@@ -22,23 +22,50 @@
       <h1>Список гостиниц</h1>
       <section> 
         <h2>Фильтр гостиниц для бронирования</h2>
-        <h3>Инфраструктура</h3>
-          <ul>
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>Wi-fi</li>
-          </ul>
-        <h3>Тип жилья</h3>
-          <ul>
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
-          </ul>
-        <h3>Стоимость в сутки</h3>
-        <p>от 0 до 3000</p>
-        <p><span>бегунок с расценками</span><p>
-        <button type="button">Показать</button>
-      </section>
+        <form action="https://echo.htmlacademy.ru" method="get" oninput="priceperdayoutput.value=priceperday.value">
+          <fieldset>
+            <legend><h3>Инфраструктура</h3></legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="filter-pool" checked>
+                <label for="filter-pool">Бассейн</label>
+              </li>            
+              <li>
+                <input type="checkbox" name="parking" id="filter-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="wifi" id="filter-wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+           </ul>
+          </fieldset>
+          <fieldset>          
+            <legend><h3>Тип жилья</h3></legend>
+           <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="filter-hotel" checked>
+                <label for="filter-hotel">Госиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="filter-motel" checked>
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="filter-apartments" checked>
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend><h3><label for="priceperday">Стоимость в сутки</span></h3></label></legend>
+            <p><span>от 0 до 3000</span></p>
+            <div><output name="priceperdayoutput"></div>                      
+            <p><span>0 <input type="range" id="priceperday" name="priceperday" min="0" max="3000" step="100">3000</span></p>
+               <!---я пока не знаю как сделать 2 бегунка. И "от 0" "до 3000" должны быть двумя окошками для output, наколько я понимаю. Тоже пока не понимаю как это сделать.---->
+            <button type="submit" value="Показать">Показать</button>
+          </fieldset>
+        </section>
       <section>
         <h2>Найдено 3</h2>
         <h3>Сортировка</h3>
