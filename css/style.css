@@ -11,13 +11,12 @@
 	--basic-brown: #766357;
 	--basic-dark-brown: #604E43;
 	--basic-deep-brown: #503E33;
-	--bacis-red: #FF0000;
 }
 
 /*Main*/
 body {
 	min-width: 1220px;
-	font-family: "PT Sans";
+	font-family: "PT Sans","Arial",sans-serif;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
@@ -60,6 +59,10 @@ img {
 	color: var(--basic-black);
 }
 
+.current-menu-item {
+	opacity: 0.3;
+}
+
 .site-navigation a:hover,
 .site-navigation a:focus {
 	color: var(--basic-blue);
@@ -67,8 +70,7 @@ img {
 }
 
 .site-navigation a:active {
-	color: var(--bacis-red);
-	background-color: var(--basic-white);
+	opacity: 0.3;
 } 
 
 .main-header {
@@ -78,30 +80,26 @@ img {
 	text-align: center;	
 }
 
-.reasons-list {
-	list-style: none;
-}
-
-.reasons-item {
-	list-style: none;
-	font-size: 14px;
-	line-height: 21px;
-}
-
-.reasons-item h3 {
+.main-titles {
+	font-weight: bold;
 	font-size: 21px;
 	line-height: 21px;
 }
 
-.advice-item h3 {
+.search-results-titles {
 	font-weight: bold;
-	font-size: 21px;	
+	font-size: 21px;
+	line-height: 26px;
 }
 
-.advice-item {
+.reasons-list {
+	list-style: none;
+}
+
+.list-item {
+	list-style: none;
 	font-size: 14px;
 	line-height: 21px;
-	list-style: none;
 }
 
 .index-columns-1 {
@@ -109,55 +107,16 @@ img {
 	background-color: var(--basic-blue)
 }
 
-.index-columns-3 {
-	color: var(--basic-white);
-	background-color: var(--basic-blue)
-}
-
-.index-columns-4 {
-	color: var(--basic-black);
-	background-color: var(--basic-gray)
-}
 
 
 .button {
+	font-family: "PT Sans","Arial",sans-serif;
   font-size: 21px;
+  font-weight: bold;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-}
-
-.button-search {
-	width: 568px;
-	height: 86px;
-	color: var(--basic-white);
-	background-color: var(--basic-brown)
-}
-
-.button-search:hover,
-.button-search:focus {
-	background-color: var(--basic-dark-brown)
-}
-
-.button-search:active {
-  background-color: var(--basic-deep-brown);
-}
-
-.button-find {
-	width: 458px;
-	height: 58px;
-	color: var(--basic-white);
-	background-color: var(--basic-blue);
-}
-
-.button-find:hover,
-.button-find:focus {
-	background-color: var(--basic-dark-blue)
-}
-
-.button-find:active {
-  background-color: var(--basic-deep-blue);
 }
 
 .cell input {
@@ -175,22 +134,9 @@ img {
   color: var(--basic-black);
  }
 
- .footer-contacts a:hover,
+.footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
-}
-
-.social-button {
-	background-color: var(--basic-blue);
-}
-
-.social-button:hover,
-.social-button:focus {
-  background-color: var(--basic-dark-blue);
-}
-
-.social-button:active {
-	background-color: var(--basic-deep-blue);
 }
 
 .results-list {
@@ -202,37 +148,38 @@ img {
 	line-height: 26px;
 }
 
-.results {
-	font: inherit;	
-}
 
-.button-details {
+.button-blue {
 	background-color: var(--basic-blue);
 	color: var(--basic-white);
 }
 
-.button-details:hover,
-.button-details:focus {
+.button-blue:hover,
+.button-blue:focus {
 	background-color: var(--basic-dark-blue)
 }
 
-.button-details:active {
+.button-blue:active {
   background-color: var(--basic-deep-blue);
+  color: rgba(255 255 255 / 0.3);
+  fill-opacity: 0.3;
 }
 
-.button-book {
+.button-brown {
 	background-color: var(--basic-brown);
 	color: var(--basic-white);
 }
 
-.button-details:hover,
-.button-details:focus {
+.button-brown:hover,
+.button-brown:focus {
 	background-color: var(--basic-dark-brown)
 }
 
-.button-details:active {
+.button-brown:active {
   background-color: var(--basic-deep-brown);
+ 	color: rgba(255 255 255 / 0.3);
 }
+
 
 .contact-icons {
 	list-style: none;	
