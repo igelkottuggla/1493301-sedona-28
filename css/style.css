@@ -107,14 +107,19 @@ img {
 	background-color: var(--basic-blue)
 }
 
+.booking-details h2{
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+}
 
 
 .button {
 	font-family: "PT Sans","Arial",sans-serif;
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   text-align: center;
-  vertical-align: middle;
   text-transform: uppercase;
   border: none;
 }
@@ -132,6 +137,12 @@ img {
 
 .footer-contacts a {
   color: var(--basic-black);
+ }
+
+ .footer-contacts p {
+ 	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
  }
 
 .footer-contacts a:hover,
@@ -179,6 +190,49 @@ img {
   background-color: var(--basic-deep-brown);
  	color: rgba(255 255 255 / 0.3);
 }
+
+.btn-blue-booking {
+	background-color: var(--basic-blue);
+	color: var(--basic-white);
+}
+
+.btn-blue-booking {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.btn-blue-booking:hover,
+.button-blue:focus {
+	background-color: var(--basic-dark-blue)
+}
+
+.btn-blue-booking:active {
+  background-color: var(--basic-deep-blue);
+  color: rgba(255 255 255 / 0.3);
+  fill-opacity: 0.3;
+}
+
+.btn-brown-booking {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.btn-brown-booking {
+	background-color: var(--basic-brown);
+	color: var(--basic-white);
+}
+
+.btn-brown-booking:hover,
+.btn-brown-booking:focus {
+	background-color: var(--basic-dark-brown)
+}
+
+.btn-brown-booking:active {
+  background-color: var(--basic-deep-brown);
+ 	color: rgba(255 255 255 / 0.3);
+}
+
+
 
 
 .contact-icons {
