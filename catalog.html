@@ -25,11 +25,11 @@
 
     <main>
       <h1>Список гостиниц</h1>
-      <section> 
-        <h2>Фильтр гостиниц для бронирования</h2>
+      <section class="catalog-filter"> 
+        <h2 class="visually-hidden">Фильтр гостиниц для бронирования</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
-            <legend>Инфраструктура</legend>
+            <legend class="catalog-filter-titles">Инфраструктура</legend>
             <ul>
               <li>
                 <input type="checkbox" name="pool" id="filter-pool" checked>
@@ -46,7 +46,7 @@
            </ul>
           </fieldset>
           <fieldset>          
-            <legend>Тип жилья</legend>
+            <legend class="catalog-filter-titles">Тип жилья</legend>
            <ul>
               <li>
                 <input type="checkbox" name="hotel" id="filter-hotel" checked>
@@ -63,16 +63,9 @@
             </ul>
           </fieldset>
           <fieldset>
-            <legend>Стоимость в сутки</legend>
+            <legend class="catalog-filter-titles">Стоимость в сутки</legend>
             <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-              </div>
-              <div class="toggle toggle-min" tabindex="0"></div>
-              <div class="toggle toggle-max" tabindex="0"></div>
-              </div>
-            <div class="price-controls">
+              <div class="price-controls">
               <label class="min-price">
                 от <input type="number" name="min-price" value="0">
               </label>
@@ -80,8 +73,16 @@
               до <input type="number" name="max-price" value="3000">
               </label>
              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0"></div>
+              <div class="toggle toggle-max" tabindex="0"></div>
+              </div>
+            
             </div>
-              <button type="submit" value="Показать">Показать</button>
+              <button type="submit" value="Показать" class="btn-show">Показать</button>
           </fieldset>
         </form>
       </section>

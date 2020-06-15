@@ -121,6 +121,7 @@ img {
   font-weight: bold;
   text-align: center;
   text-transform: uppercase;
+  color: var(--basic-white);
   border: none;
 }
 
@@ -232,9 +233,110 @@ img {
  	color: rgba(255 255 255 / 0.3);
 }
 
-
-
-
 .contact-icons {
 	list-style: none;	
+}
+
+.catalog-filter {
+	color: var(--basic-white);
+	background: url(../img/background-filter.jpg) no-repeat;
+	background-color: #888888;
+	}
+
+.catalog-filter-titles {
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 21px;
+	}
+
+.range-controls {
+	position: relative;
+	width: 220px;
+	padding-top: 11px;
+	margin-top: 11px;
+	margin-bottom: 30px;
+}
+
+.range-controls .scale {
+	width: 220px;
+  height: 2px;
+  background: var(--basic-white);
+  }
+
+ fieldset {
+ border:0 none;
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+  background: var(--basic-white);
+}
+
+.range-controls .toggle {
+	position: absolute;
+  top: 2px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  border: 8px solid #ffffff;
+  background-color: #ababab;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0,1,1,0.3);
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0px;
+}
+
+.range-controls .toggle-max {
+  left: 152.2px;
+}
+
+.price-controls {
+	width: 224px;
+	height: 36px;
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 2px;
+	text-transform: uppercase;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  padding-top: 6.5px;
+
+}
+
+.price-controls input {
+	font-family: inherit;
+  font-size: inherit;
+  color: var(--basic-white);
+  width: 58px;
+	height: 21px;
+	text-align: center;
+	border: none;
+	background-color: transparent;
+  }
+
+.btn-show {
+	background-color: transparent;
+	font-family: "PT Sans","Arial",sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 2px;
+}
+
+
+.btn-show:hover {
+ color: var(--basic-black);
+ background-color: var(--basic-white);
 }
