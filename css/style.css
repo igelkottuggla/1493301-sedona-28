@@ -11,6 +11,8 @@
 	--basic-brown: #766357;
 	--basic-dark-brown: #604E43;
 	--basic-deep-brown: #503E33;
+	--basic-toggle: #999999;
+	--basic-filter-bckg: #888888;
 }
 
 /*Main*/
@@ -20,7 +22,6 @@ body {
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	color: #333333;
 	text-transform: uppercase;
 	background-color: var(--basic-white);
 	background-position: center;
@@ -78,6 +79,8 @@ img {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;	
+	color: var(--basic-black);
+	text-shadow: 0px 4px 4px rgba(0 0 0 / 0.25);
 }
 
 .main-titles {
@@ -92,8 +95,14 @@ img {
 	line-height: 26px;
 }
 
+.blue-block {
+	background-color: var(--basic-blue);
+	color: var(--basic-white);
+}
+
 .reasons-list {
 	list-style: none;
+	color: var(--basic-black);
 }
 
 .list-item {
@@ -104,7 +113,6 @@ img {
 
 .index-columns-1 {
 	color: var(--basic-white);
-	background-color: var(--basic-blue)
 }
 
 .booking-details h2{
@@ -240,7 +248,7 @@ img {
 .catalog-filter {
 	color: var(--basic-white);
 	background: url(../img/background-filter.jpg) no-repeat;
-	background-color: #888888;
+	background-color: var(--basic-filter-bckg);
 	}
 
 .catalog-filter-titles {
@@ -280,8 +288,8 @@ img {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
-  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  background-color: var(--basic-toggle);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0,1,1,0.3);
   cursor: pointer;
@@ -292,13 +300,13 @@ img {
 }
 
 .range-controls .toggle-max {
-  left: 152.2px;
+  left: 152px;
 }
 
 .price-controls {
 	width: 224px;
 	height: 36px;
-	border: 2px solid #FFFFFF;
+	border: 2px solid var(--basic-white);
 	box-sizing: border-box;
 	border-radius: 2px;
 	text-transform: uppercase;
@@ -306,7 +314,7 @@ img {
   font-size: 14px;
   line-height: 21px;
   text-align: center;
-  padding-top: 6.5px;
+  padding-top: 6px;
 
 }
 
@@ -324,13 +332,12 @@ img {
 .btn-show {
 	background-color: transparent;
 	font-family: "PT Sans","Arial",sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
-  border: 2px solid #FFFFFF;
+  border: 2px solid var(--basic-white);
 	box-sizing: border-box;
 	border-radius: 2px;
 }
