@@ -11,7 +11,7 @@
   <body class="page-body">
    <header class="main-header">
       <nav class="main-menu">
-         <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта бронирования Седона" class="main-header-logo"></a>
+         <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта бронирования Седона"></a>
          <div class="main-navigation-wrapper">
           <div class="container">
             <ul class="site-navigation">
@@ -91,37 +91,44 @@
       <section>
         <h2>Найдено 3</h2>
         <h3 class="search-results-titles">Сортировка</h3>
-        <button type="button search-results-titles">по цене</button>
-        <button type="button search-results-titles">по типу</button>
-        <button type="button search-results-titles">по рейтигу</button>
+        <button type="button" class="button search-results-titles">по цене</button>
+        <button type="button" class="button search-results-titles">по типу</button>
+        <button type="button" class="button search-results-titles">по рейтигу</button>
         <ul class="results-list">
           <li class="results">
-            <div class="first-result">  <!--Не получается распределить результаты в соответствии с макетом, не понимаю по какому принципу-->
-
+            <div class="hotels-results">  
               <img src="img/amara-resort.jpg" width="135" height="90" alt="Фото отеля Amara resort&spa»">
-              <h3 class="search-results-titles">Amara resort & Spa</h3>
-              <p>Гостиница<span>от 4000р.</span></p>
-            </div>
+                <div class="hotel-content">
+                  <h3 class="search-results-titles">Amara resort & Spa</h3><br/>
+                  <p>Гостиница<span> от 4000р.</span></p>
+                  <button type="button" class="button btn-blue-booking btn-view">Подробнее</button>
+                <button type="button" class="button btn-brown-booking btn-view">Забронировать</button>
+              </div>
               <p>Рейтинг 8.5</p>
-              <button type="button" class="button btn-blue-booking btn-view">Подробнее</button>
-              <button type="button" class="button btn-brown-booking btn-view">Забронировать</button><br>
-          
           </li>
           <li class="results">
-            <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля Desert Quail inn»">
-            <h3 class="search-results-titles">Desert Ouail Inn</h3>
-            <p>Гостиницы <span>от 3000р.</span></p>
-            <p>Рейтинг 8.9</p>
-            <button type="button" class="button btn-blue-booking">Подробнее</button>
-            <button type="button" class="button btn-brown-booking">Забронировать</button><br>
+             <div class="hotels-results">  
+                <img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля Desert Quail inn»">
+                <div class="hotel-content">
+                  <h3 class="search-results-titles">Desert Ouail Inn</h3>
+                  <p>Мотель<span> от 3000р.</span></p>
+                  <button type="button" class="button btn-blue-booking">Подробнее</button>
+                  <button type="button" class="button btn-brown-booking">Забронировать</button>
+               </div>
+                <p>Рейтинг 8.9</p>
+          </div>
           </li> 
           <li class="results">
-            <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo»">
-            <h3 class="search-results-titles">Villas at poco Diablo</h3>
-            <p>Гостиница<span>от 2000р.</span></p> 
+            <div class="hotels-results">
+              <img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo»">
+                <div class="hotel-content">
+                  <h3 class="search-results-titles">Villas at poco Diablo</h3><br>
+                  <p>Апартаменты<span> от 2000р.</span></p>
+                  <button type="button" class="button button-blue btn-blue-booking">Подробнее</button>
+                  <button type="button" class="button btn-brown-booking">Забронировать</button>
+                </div>
             <p>Рейтинг 9.2</p>
-            <button type="button" class="button button-blue btn-blue-booking">Подробнее</button>
-            <button type="button" class="button btn-brown-booking">Забронировать</button><br>
+          </div>
           </li>
         </ul>
       </section>
@@ -141,7 +148,7 @@
               <span class="visually-hidden">Twitter</span>
               <a class="social-button button-blue" href="#">     
                 <svg class="button-blue" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/ class="button blue">
+                <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white"/>
                 </svg>
               </a>
             </li>
