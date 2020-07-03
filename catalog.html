@@ -68,14 +68,12 @@
             <div class="fieldset-container search-form-price">
               <fieldset>
                 <legend class="catalog-filter-titles">Стоимость в сутки</legend>
-               <div class="range-filter">
-                    <div class="price-controls class="indicator>
-                      <label class="min-price">
-                      от <input type="text" name="min-price" value="0">
+                  <div class="range-filter">
+                    <div class="price-controls">
+                      <label class="min-price  filters-price-label">от<input type="text" name="min-price" value="0">
                       </label>
-                     <div class="indicator"></div>
-                      <label class="max-price">
-                       до <input type="text" name="max-price" value="3000">
+                      <div class="indicator"></div>
+                      <label class="max-price filters-price-label">до<input type="text" name="max-price" value="3000">
                       </label>
                     </div>
                   <div class="range-controls">
@@ -102,51 +100,53 @@
           <button type="button" class="button search-results-titles sorting-btn">по рейтигу</button>
            <div class="right">
             <a class="btn-up-down-sort" href="">
-            <svg class="btn-up-down-sort" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="btn-up-down-sort" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/></svg>
-          </a>
+            </a>
          <a class="btn-up-down-sort" href="">
             <svg class="btn-up-down-sort" width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
+            <path d="M5.5 10L11 0L0 0L5.5 10Z" fill="#CACACA"/>
             </svg>
-          </a></div>
+          </a>
+        </div>
         </div>
         <ul class="hotels-list">
           <li class="hotels-list-item">
             <a href=""><img src="img/amara-resort.jpg" width="135" height="90" alt="Фото отеля Amara resort&spa»"></a>
               <div class="hotel-content">
-                <h3 class="search-results-titles">Amara resort & Spa</h3>
-                <p>Гостиница<span> от 4000р.</span></p>
+                <a href=""><h3 class="search-results-titles">Amara resort & Spa</h3></a>
+                <span>Гостиница</span><span>от 4000р.</span>
                 <button type="button" class="button btn-blue-booking btn-view">Подробнее</button>
                 <button type="button" class="button btn-brown-booking btn-view">Забронировать</button>
               </div>
               <div class="rating">
-                <span><img src="img/4stars.png" width="91" height="17" alt=""></span>
+                <span class="star-4"></span>
                 <span class="rating-box">Рейтинг 8.5</span>
               </div>
           </li>
           <li class="hotels-list-item">
              <a href=""><img src="img/desert-quail.jpg" width="135" height="90" alt="Фото отеля Desert Quail inn»"></a>
               <div class="hotel-content">
-                <h3 class="search-results-titles">Desert Ouail Inn</h3>
-                <p>Мотель<span> от 3000р.</span></p>
+                <a href=""><h3 class="search-results-titles">Desert Ouail Inn</h3></a>
+                <span>Мотель</span><span>от 3000р.</span>
                 <button type="button" class="button btn-blue-booking">Подробнее</button>
                 <button type="button" class="button btn-brown-booking">Забронировать</button>
               </div>
                 <div class="rating">
-                  <span><img src="img/3stars.png" width="66" height="17" alt=""></span>
+                  <span class="star-3"></span>
                 <span class="rating-box">Рейтинг 8.9</span>
               </div>
           </li> 
           <li class="hotels-list-item">
-              <a href=""><img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo»"></a>
-                <div class="hotel-content">
-                  <h3 class="search-results-titles">Villas at poco Diablo</h3><br>
-                  <p>Апартаменты<span> от 2000р.</span></p>
+             <a href=""><img src="img/villas-at-poco.jpg" width="135" height="90" alt="Фото отеля Villas at Poco Diablo»"></a>
+                 <div class="hotel-content">
+                  <a href=""><h3 class="search-results-titles">Villas at poco Diablo</h3></a>
+                  <span>Апартаменты</span><span>от 2000р.</span>
                   <button type="button" class="button button-blue btn-blue-booking">Подробнее</button>
                   <button type="button" class="button btn-brown-booking">Забронировать</button>
                 </div>
-                <div class="rating"><span class=><img src="img/2stars.png" width="42" height="17" alt=""></span>
+                <div class="rating">
+                  <span class="star-2"></span>
                  <span class="rating-box">Рейтинг 9.2</span>
                </div>
           </li>
@@ -154,18 +154,19 @@
       </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer-catalog">
        <section class="footer-contacts">
           <h2 class="visually-hidden">Контакты</h2>
           <p>#Visitsedona</p>
           <p>Тел: +7(495) 666-01-66</p>
         </section>
        <section>
+        <div class="social">
          <h2 class="visually-hidden">Мы в социальных сетях</h2>
          <ul class="contact-icons">
             <li>
               <span class="visually-hidden">Twitter</span>
-              <a class="social-button" href="#">     
+              <a class="social-button" href="#"> 
                 <svg class="button-blue" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white" />
                 </svg>
@@ -173,7 +174,7 @@
             </li>
             <li>  
              <span class="visually-hidden">Facebook</span>
-              <a class="social-button " href="#">  
+              <a class="social-button " href="#">
                <svg class="button-blue" width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
                 </svg>
@@ -188,10 +189,14 @@
               </a>
             </li>
           </ul>
+        </div>
         </section> 
         <p>
-          Website by
-        <a href="https://htmlacademy.ru" aria-label="На страницу HTML Академии"> <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии"></a>
+          Website by<span class="dev-s">
+          <a href="https://htmlacademy.ru" aria-label="На страницу HTML Академии">
+            <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
+          </a>
+        </span>
         </p>
     </footer>
   </body>
