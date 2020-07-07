@@ -13,10 +13,10 @@
       <nav class="main-menu">
          <a href="index.html" class="main-header-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип сайта бронирования Седона"></a>
          <ul class="site-navigation">
-            <li><a href="">Информация</a></li>
-            <li><a href="">Фото и видео</a></li>
-            <li><a href="">Карта штата</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li class="main-menu-item left-side-first"><a href="">Информация</a></li>
+            <li class="main-menu-item left-side-second"><a href="">Фото и видео</a></li>
+            <li class="main-menu-item right-side-third"><a href="">Карта штата</a></li>
+            <li class="main-menu-item right-side-fourth"><a href="catalog.html">Гостиницы</a></li>
           </ul>
       </nav>
     </header>
@@ -29,56 +29,52 @@
       <section class="reasons"> 
        <h1 class="main-heading">Седона - небольщой городок в Аризоне,<br>заслуживающий большего</h1>
        <p>Рассмотрим 5 причин по которым Седона круче чем Гранд Каньон!</p>
-          <ul class="reasons-list">
+        <ul class="reasons-list">
             <li class="list-item list-item-full-row">
               <div class="reason-row">
                <div class= "blue-block">
-                  <h2  class="main-titles">Настоящий городок</h2>
-                  <span>- № 1 -</span>
+                  <h2  class="main-titles">Настоящий<br>городок</h2>
+                  <span>— № 1 —</span>
                   <p>Седона - не аттракцион для туристов, там<br>течет своя жизнь</p>
                 </div>
                 <img src="img/image-reason-1.jpg" width="800" height="256"  alt="Фотография Седоны">
               </div>
               <h3 class="visually-hidden">Советы</h3>
               <ul class="advice advantages-list">
-               <li class="list-item">
-                  <div class="advantages-list-icon bckg-living">
-                  </div>
+               <li class="list-item advantages-list-icon bckg-living">
                   <h3 class="main-titles">Жилье</h3>
                   <p>Рекомендуем пожить в натоящем<br>мотеле! Все как в кино!</p>
                </li>
-               <li class="list-item">
-                  <div class="advantages-list-icon bckg-food"></div>
+               <li class="list-item advantages-list-icon bckg-food">
                   <h3 class="main-titles">Еда</h3>
                   <p>Всегда заказывайте настоящий бургер,<br> Вы не разочаруетесь!</p>
                </li>
-               <li class="list-item">
-                  <div class="advantages-list-icon bckg-souvenirs"></div>
+               <li class="list-item advantages-list-icon bckg-souvenirs">
                   <h3  class="main-titles">Сувениры</h3>
                   <p>Не только китайского,но и местного<br> производства!</p>
                 </li>
           </ul>
             <li class="reason-row reason-row-reverse list-item list-item-full-row">
                 <div class="blue-block">
-                  <h2  class="main-titles">Там есть мост дьявола</h2>
-                  <span>- № 2 -</span>
-                  <p>Да, по нему можно пройти! Если, конечно,<br> Вы осмелитесь</p>
+                  <h2  class="main-titles">Там есть<br>мост дьявола</h2>
+                  <span>— № 2 —</span>
+                  <p>Да, по нему можно пройти!Если,конечно,<br>Вы осмелитесь</p>
                 </div>
                 <img src="img/image-reason-5.jpg" width="800" height="256" alt="Фотография Каньона в Седоне">
             </li>
             <li class="list-item gray-box">
               <h2  class="main-titles">Небольшая<br>площадь</h2>
-              <span>- № 3 -</span>
+              <span>— № 3 —</span>
               <p>Все достопримечательности<br>находятся очень близко</p>
             </li>
             <li class="list-item gray-box">
               <h2 class="main-titles">Красивая<br>дорога</h2>
-              <span>- № 4 -</span>
+              <span>— № 4 —</span>
               <p>Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
             </li>
             <li class="list-item gray-box">
               <h2  class="main-titles">Мало<br>туристов</h2>
-              <span>- № 5 -</span>
+              <span>— № 5 —</span>
               <p>Большинство едет в Гранд Каньон<br>и толпится там</p>
             </li>
           </ul>
@@ -88,15 +84,17 @@
         <p class="offer">Укажите предполагаемые даты поездки,<br>
         и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <button type="button" class="button button-brown searh-form-btn">Поиск гостиницы в Седоне</button>
+          <div class="form form-show">
           <form action="https://echo.htmlacademy.ru/courses" method="post" class="search-form pop-up">
             <p class="field-wrap">
               <label for="check-in">Дата заезда:</label>
-              <input class="input-field" id="check-in" type="text" name="date" placeholder="24.04.2017"><button type="button" class="calendar-button"></button>
+              <input class="input-field" id="check-in" type="text" name="date" placeholder="24 апреля 2017"><button type="button" class="calendar-button"></button>
             </p>
             <p class="field-wrap">
               <label for="check-out">Дата выезда:</label>
-              <input class="input-field calendar-icon" id="check-out" type="text" name="date" placeholder="14.06.2017"><button type="button" class="calendar-button"></button>
+              <input class="input-field calendar-icon" id="check-out" type="text" name="date" placeholder="14 июля 2017"><button type="button" class="calendar-button"></button>
             </p>
+            <div class="search-form-row">
             <p class="amount-container guests-amount">
               <label for="adult-amount" class="adults">Взрослые:</label>
               <button type="button" class="btn-minus btn-minus-adults"></button>
@@ -109,8 +107,10 @@
               <input type="text" name="kids-amount" id="kids-amount" value="0">
               <button type="button" class="btn-plus"></button>
             </p>
+          </div>
             <input type="submit" value="Найти" class="button button-blue search-form-blue">
           </form>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
@@ -136,7 +136,7 @@
                 <path d="M10.95 1.14409C12.635 0.648089 13.934 1.41409 14.527 2.32309C15.2 2.09209 15.858 1.84209 16.538 1.61509C16.5249 2.30145 16.2117 2.94761 15.681 3.38309C16.366 3.55309 16.985 2.89209 16.985 2.89209C16.816 3.89209 15.979 4.68009 15.422 4.91609C15.191 11.6661 12.247 16.1331 5.34498 15.9981H4.89898C4.48898 15.9981 0.734977 15.5381 0.000976562 14.1111C2.27198 14.3071 3.89398 13.6891 4.69398 12.9341C3.73398 12.6341 2.01498 12.4571 1.71498 9.98409C2.06398 10.0901 2.27898 10.2121 2.90498 10.1031C1.70498 9.24709 0.373977 8.53009 0.447977 6.33009C0.732977 6.65809 1.51498 6.86609 1.78798 6.80209C1.08498 6.56109 -0.182023 3.44209 0.893977 1.85009C2.71198 3.70409 4.62898 5.45609 8.04598 5.62309C8.25398 3.33009 9.18298 1.79309 10.95 1.14409Z" fill="white" />
                 </svg>
               </a>
-            </li>
+            </li >
             <li class="contact-icons-btn">  
              <span class="visually-hidden">Facebook</span>
               <a class="social-button button-blue" href="#">  
@@ -158,8 +158,7 @@
       </section> 
       <p>
           Website by
-          <a href="https://htmlacademy.ru" aria-label="На страницу HTML Академии"> 
-            <span class="dev-s">
+          <a href="https://htmlacademy.ru" aria-label="На страницу HTML Академии">  <span class="dev-s">
               <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Академии">
             </span>
           </a>
