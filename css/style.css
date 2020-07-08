@@ -21,6 +21,7 @@
 	--basic-filter-bckg: #888888;
 	--basic-gray-line: #E5E5E5;
 	--basic-gray-text: #666666;
+	--basic-btn-sort-gray: #CACACA;
 }
 
 
@@ -317,7 +318,6 @@ input[type="radio"].visually-hidden {
 	font-weight: bold;
 	margin-top: 58px;
 	margin-bottom: 30px;
-
 }
 
 .offer {
@@ -353,10 +353,6 @@ input[type="radio"].visually-hidden {
 }
 
 
-.field-wrap input {
-  color: var(--basic-black);
-
-}
  .input-field {
 	font-family: inherit;
   font-size: inherit;
@@ -631,12 +627,12 @@ input[type="radio"].visually-hidden {
 
 .dev-s:hover,
 .dev-s:focus {
+	fill: var(--basic-blue);
 
 }
 
-.dev-s:active
-{
-
+.dev-s:active{
+	opacity: 0.3;
 }
 
 .social-button {
@@ -740,7 +736,6 @@ input[type="radio"].visually-hidden {
 }
 
 .options {
-	padding-bottom: 25px;
 	margin-bottom: 24px;
 	margin-left: 42px;
 }
@@ -837,10 +832,11 @@ input[type="radio"].visually-hidden {
 	opacity: 1;
 }
 
-
+.btn-up-down-sort {
+	fill: var(--basic-btn-sort-gray);
+}
 .btn-up-down-sort:hover,
 .btn-up-down-sort:focus {
-	color: var(--basic-blue);
 	fill: var(--basic-blue);
 }
 
@@ -1020,21 +1016,20 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option label {
-  position: relative;
-  display: block;
   cursor: pointer;
   user-select: none;
 }
 
 .filter-input-checkbox + label::before {
   content: "";
-  position: absolute;
+  position: relative;
   left: -42px;
   top: 0;
   width: 23px;
   height: 23px;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1053,16 +1048,16 @@ input[type="radio"].visually-hidden {
 	padding: 0;
   margin-top: 25px;
   border: none;
+  text-align: left;
 
 } 
 
 
 .fieldset-container label {
-  display: block;
-  position: absolute;
+  display: flex;
+  position: relative;
   margin: 0;
   padding: 0;
- 	vertical-align: middle;
 }
 
 .fieldset-container label:not(:last-child) {
@@ -1098,7 +1093,7 @@ input[type="radio"].visually-hidden {
 
 
 .range-filter label:first-child {
-  padding-left: 10%;
+  padding-left: 15%;
 }
 
 .range-filter label:last-child {
@@ -1154,11 +1149,34 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
-@keyframes drop-down {
-	0% {
+.search-form-hide {
+  animation: formhide 0.7s backwards;
+}
 
+.search-form-show {
+  animation: formshow 0.7s forwards;
+}
+
+@keyframes formshow {
+  0% {
+  	transform: translateY(-100%);
+  	opacity: 0;
 	}
-	100% {
-		opacity: 1;
-	}
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes formhide {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-100%);
+      box-shadow: none;
+      transform-origin: top;
+  }
 }
