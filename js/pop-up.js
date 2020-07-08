@@ -6,12 +6,10 @@ if (searchOpen) {
     searchForm.classList.add("search-form-hide");
   };
 
- searchOpen.addEventListener("click", function (event) {
+ searchOpen.addEventListener("click", function(event) {
     event.preventDefault();
     searchForm.classList.toggle("search-form-show");
     searchForm.classList.toggle("search-form-hide");
-
   });
 };
-
 

@@ -1149,6 +1149,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 }
 
+
 .search-form-hide {
   animation: formhide 0.7s backwards;
 }
@@ -1162,6 +1163,10 @@ input[type="radio"].visually-hidden {
   	transform: translateY(-100%);
   	opacity: 0;
 	}
+	100% {
+		opacity: 1;
+	}
+}
 
   100% {
     transform: translateY(0);
