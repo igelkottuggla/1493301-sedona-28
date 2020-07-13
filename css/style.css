@@ -178,7 +178,8 @@ input[type="radio"].visually-hidden {
 	display: flex;
   padding: 0;
   list-style: none;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
+  margin-top: 58px;
 }
 
 
@@ -191,9 +192,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 82px;
 }
 
-.advice h3 {
-	padding-top: 157px;
-}
 
 .advantages-list .list-item {
 	position: relative;
@@ -205,32 +203,30 @@ input[type="radio"].visually-hidden {
 
 .advantages-list-icon::before {
   content: "";
-  position: absolute;
   top: 57px;
   left: 50%;
   display: block;
-  margin-left: -38px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 28px;
 }
 
 .bckg-living::before {
 	background: url(../img/house-icon.svg) no-repeat top center;
 	width: 72px;
 	height: 75px;
-	margin-top: 3px;
 }
 
 .bckg-food::before {
 	width: 72px;
-	height: 70px;
+	height: 75px;
 	background: url(../img/burger-icon.svg) no-repeat top center;    
-	margin-top: 3px;
 }
 
 .bckg-souvenirs::before {
 	background: url(../img/gift-icon.svg) no-repeat top center;;
 	width: 69px;
-  height: 77px;
-  padding-right: 4px;
+  height: 75px;
 }
 
 .main-titles {
@@ -238,7 +234,7 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 21px;
 	margin-top: 0;
-	margin-bottom: 27px;
+	margin-bottom: 25px;
 }
 
 .reasons p {
@@ -250,8 +246,7 @@ input[type="radio"].visually-hidden {
 
 .search-results-titles {
 	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
+
 }
 
 .search-results-titles h2, h3 {
@@ -262,19 +257,21 @@ input[type="radio"].visually-hidden {
 .sorting-header {
 	font-size: 12px;
 	line-height: 18px;
+	font-style: normal;
+	margin-right: 35px;
+  margin-top: 17px;
+  margin-left: 2px
 }
 
 
 .gray-box {
 	background-color: var(--basic-gray);
-	padding-top: 45px;
+	padding-top: 46px;
 }
 
 .gray-box p {
-	margin-bottom: 54px;
-	margin-top: 21px;
 	margin-bottom: 56px;
-  margin-top: 22px;
+  margin-top: 25px;
 }
 
 
@@ -294,15 +291,16 @@ input[type="radio"].visually-hidden {
 	padding-left: 52px;
 	padding-top: 46px;
 	padding-right: 47px;
-	margin-right: auto;
+	width: 400px;
 }
 
 .blue-block-reverse {
 	background-color: var(--basic-blue);
 	color: var(--basic-white);
 	padding-left: 53px;
-  padding-top: 50px;
+  padding-top: 53px;
   padding-right: 45px;
+  width: 400px;
 }
 
 .blue-block-reverse h2 {
@@ -310,13 +308,13 @@ input[type="radio"].visually-hidden {
 }
 
 .blue-block-reverse span {
-	padding-right: 9px;
+	padding-right: 6px;
 
 }
 
 
 .blue-block-reverse p {
-	margin-top: 23px;
+	margin-top: 24px;
 
 }
 
@@ -370,7 +368,7 @@ input[type="radio"].visually-hidden {
 .searh-form-btn {
 	width: 568px;
 	height: 86px;
-	padding-top: 12px;
+	padding-top: 15px;
 	padding-bottom: 15px;
 	cursor: pointer;
 	position: relative;
@@ -577,8 +575,11 @@ input[type="radio"].visually-hidden {
  }
 
  .main-footer-index .footer-contacts p{
- 	margin-bottom: 10px;
+ 	margin-bottom: 12px;
   margin-top: -1px;
+  padding-left: 70px;
+
+
  }
 
  .main-footer-index .dev-s {
@@ -596,8 +597,10 @@ input[type="radio"].visually-hidden {
 .social .contact-icons {
 	display: flex;
   align-items: center;
-	margin-left: 85px;
-
+	justify-content: center;
+	margin: 0;
+  margin-left: 5px;
+	padding: 0;
 }
 
 .social-button {
@@ -631,12 +634,6 @@ input[type="radio"].visually-hidden {
   fill-opacity: 0.3;
 }
 
-.footer-contacts p {
-	margin-bottom: 15px;
-  padding-left: 70px;
-  margin-top: -5px;
-}
-
 .footer-contacts a {
   color: var(--basic-black);
 }
@@ -660,9 +657,7 @@ input[type="radio"].visually-hidden {
 	align-items: center;
 	margin-left: 67px;
 	fill: var(--basic-black);
-  margin-left: 65px;;
-  margin-bottom: 5px;
-}
+ }
 
 .dev-s a {
   margin-left: 10px;
@@ -788,17 +783,12 @@ input[type="radio"].visually-hidden {
 	margin-right: 45px;
 }
 
-.sorting h3 {
-	margin-right: 35px;
-  margin-top: 17px;
-  margin-left: 2px
-}
 
 .sorting {
 	display: flex; 
 	border-bottom: 1px solid var(--basic-gray-line);
-	padding-left: 6%;
-	padding-right: 6%;
+	padding-left: 73px;
+	padding-right: 73px;
 	padding-top: 14px;
   padding-bottom: 16px;
 
@@ -870,6 +860,7 @@ input[type="radio"].visually-hidden {
 	color: var(--basic-black);
 	border-bottom: 1px dashed var(--basic-blue);
 	margin-top: 16px;
+	color: var(--basic-black);
 }
 
 .active {
@@ -879,7 +870,6 @@ input[type="radio"].visually-hidden {
 .sorting-btn:hover,
 .sorting-btn:focus {
 	color: var(--basic-blue);
-	text-decoration: 1px underline dashed var(--basic-blue);
 	border-bottom: 1px dashed var(--basic-blue);
 }
 
@@ -890,8 +880,7 @@ input[type="radio"].visually-hidden {
 
 .btn-up-down-sort {
 	fill: var(--basic-btn-sort-gray);
-	fill: var(--basic-btn-sort-gray);
-  margin-left: 4px;
+	 margin-left: 4px;
   margin-top: 25px;
 }
 
@@ -1224,7 +1213,6 @@ input[type="radio"].visually-hidden {
 	transform: translate( -50%);
 	z-index: 2;
 	margin-left: 600px;
-	position: absolute;
 }
 
 .search-form-hide {
