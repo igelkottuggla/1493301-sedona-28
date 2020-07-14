@@ -162,7 +162,6 @@ input[type="radio"].visually-hidden {
 	margin-top: 75px;
 }
 
-
 .main-heading {
 	font-weight: bold;
 	font-size: 21px;
@@ -173,7 +172,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 48px;
 }
 
-
 .advice {
 	display: flex;
   padding: 0;
@@ -182,8 +180,6 @@ input[type="radio"].visually-hidden {
   margin-top: 58px;
 }
 
-
-
 .advantages-list li {
   text-align: center;
 }
@@ -191,7 +187,6 @@ input[type="radio"].visually-hidden {
 .advantages-list p {
 	margin-bottom: 82px;
 }
-
 
 .advantages-list .list-item {
 	position: relative;
@@ -218,15 +213,15 @@ input[type="radio"].visually-hidden {
 }
 
 .bckg-food::before {
-	width: 72px;
-	height: 75px;
+	width: 75px;
+	height: 70px;
 	background: url(../img/burger-icon.svg) no-repeat top center;    
 }
 
 .bckg-souvenirs::before {
 	background: url(../img/gift-icon.svg) no-repeat top center;;
 	width: 69px;
-  height: 75px;
+  height: 77px;
 }
 
 .main-titles {
@@ -245,8 +240,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-results-titles {
-	font-weight: bold;
-
+	font-weight: normal;
 }
 
 .search-results-titles h2, h3 {
@@ -260,9 +254,9 @@ input[type="radio"].visually-hidden {
 	font-style: normal;
 	margin-right: 35px;
   margin-top: 17px;
-  margin-left: 2px
+  margin-left: 2px;
+  font-weight: normal;
 }
-
 
 .gray-box {
 	background-color: var(--basic-gray);
@@ -273,7 +267,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 56px;
   margin-top: 25px;
 }
-
 
 .reason-row {
 	display: flex;
@@ -309,15 +302,11 @@ input[type="radio"].visually-hidden {
 
 .blue-block-reverse span {
 	padding-right: 6px;
-
 }
-
 
 .blue-block-reverse p {
 	margin-top: 24px;
-
 }
-
 
 .blue-block p {
 	margin-top: 25px;
@@ -387,8 +376,7 @@ input[type="radio"].visually-hidden {
 	line-height: 26px;
 }
 
-
- .input-field {
+.input-field {
 	font-family: inherit;
   font-size: inherit;
   font-weight: bold;
@@ -411,16 +399,12 @@ input[type="radio"].visually-hidden {
   margin-left: 0px;
 }
 
-
 .guests-amount .kids {
 	text-align: right;
   width: 68px;
   padding-right: 25px;
   padding-left: 10px;
-
 }
-
-
 
 .field-wrap input:focus,
 .guests-amount input:focus {
@@ -463,8 +447,6 @@ input[type="radio"].visually-hidden {
 .calendar-button:active{
 	background-image: url(../img/calendar-blue.svg);
 }
-
-
 
 .amount-container {
   margin: 0;
@@ -578,9 +560,7 @@ input[type="radio"].visually-hidden {
  	margin-bottom: 12px;
   margin-top: -1px;
   padding-left: 70px;
-
-
- }
+}
 
  .main-footer-index .dev-s {
  	margin-bottom: 0;
@@ -592,6 +572,16 @@ input[type="radio"].visually-hidden {
   display: grid;
 	grid-template-columns: repeat(3, 400px);
   align-content: center;
+}
+
+.main-footer-catalog .social {
+	margin-top: 10px;
+}
+
+.main-footer-catalog .footer-contacts p {
+  margin-bottom: 12px;
+  margin-top: -1px;
+  padding-left: 70px;
 }
 
 .social .contact-icons {
@@ -611,8 +601,7 @@ input[type="radio"].visually-hidden {
 	margin-right: 5px;
 }
  
-
- .social-button svg {
+.social-button svg {
 	padding-top: 15px;
 }
 
@@ -643,14 +632,12 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-
- }
+}
 
 .footer-contacts a:hover,
 .footer-contacts a:focus {
   text-decoration: none;
 }
-
 
 .dev-s {
 	display: flex;
@@ -661,13 +648,11 @@ input[type="radio"].visually-hidden {
 
 .dev-s a {
   margin-left: 10px;
-
 }
 
 .dev-s svg:hover,
 .dev-s svg:focus {
 	fill: var(--basic-blue);
-
 }
 
 .dev-s svg:active{
@@ -686,8 +671,6 @@ input[type="radio"].visually-hidden {
 	font-size: 21px;
 	line-height: 26px;
 }
-
-
 
 .button-brown {
 	background-color: var(--basic-brown);
@@ -813,15 +796,12 @@ input[type="radio"].visually-hidden {
 	margin-top: auto;
 }
 
-
-
 .rating-box::before {
 	background-image: url(../img/star.png);
 	background-repeat: space;
 	height: 17px;
   display: block;
 }
-
 
 .star-4::before {
   content: "";
@@ -848,7 +828,6 @@ input[type="radio"].visually-hidden {
   margin-top: -66px;
 }
 
-
 .sorting-btn {
 	margin-right: 21px;
 	background-color: transparent;
@@ -856,11 +835,10 @@ input[type="radio"].visually-hidden {
 	height: 18px;
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: normal
+	font-weight: normal;
 	color: var(--basic-black);
 	border-bottom: 1px dashed var(--basic-blue);
 	margin-top: 16px;
-	color: var(--basic-black);
 }
 
 .active {
@@ -880,8 +858,9 @@ input[type="radio"].visually-hidden {
 
 .btn-up-down-sort {
 	fill: var(--basic-btn-sort-gray);
-	 margin-left: 4px;
+	margin-left: 4px;
   margin-top: 25px;
+
 }
 
 .active-btn {
@@ -916,7 +895,6 @@ input[type="radio"].visually-hidden {
   height: 2px;
   background: var(--basic-white);
   opacity: 0.3;
-
 }
 
 .range-controls .toggle {
@@ -961,7 +939,6 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
-
 .price-controls input {
 	font-family: inherit;
   font-size: inherit;
@@ -971,11 +948,7 @@ input[type="radio"].visually-hidden {
 	text-align: left;
 	border: none;
 	background-color: transparent;
-
 }
-
-
-
 
 .search-form-price legend {
 	margin-bottom: 10px;
@@ -1022,7 +995,6 @@ input[type="radio"].visually-hidden {
   padding-bottom: 4px;
 }
 
-
 .hotels-list {
 	margin: 0;
 	padding: 0;
@@ -1042,7 +1014,6 @@ input[type="radio"].visually-hidden {
 	list-style: none;
 	display: flex;
   flex-direction: row;
-
 }
 
 .hotel-content {
@@ -1120,9 +1091,6 @@ input[type="radio"].visually-hidden {
   text-align: left;
 } 
 
-
-
-
 .fieldset-container label {
   display: flex;
   position: relative;
@@ -1144,10 +1112,9 @@ input[type="radio"].visually-hidden {
 	margin-right: 47px;
 }
 
-
 .search-form-acomm-type li {
-    margin-left: 41px;
-  }
+  margin-left: 41px;
+}
 
 .search-form-acomm-type label {
   margin-left: 9px;
@@ -1162,8 +1129,6 @@ input[type="radio"].visually-hidden {
 	margin-left: 345px;
 }
 
-
-
 .range-filter label:first-child {
   padding-left: 56px;
 }
@@ -1171,8 +1136,6 @@ input[type="radio"].visually-hidden {
 .range-filter label:last-child {
   padding-left: 47px;
 }
-
-
 
 .search-form label {
 	display: block;
