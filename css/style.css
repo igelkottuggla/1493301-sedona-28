@@ -848,11 +848,13 @@ input[type="radio"].visually-hidden {
 .sorting-btn:focus {
 	color: var(--basic-blue);
 	border-bottom: 1px dashed var(--basic-blue);
+	opacity: 1;
 }
 
 .sorting-btn:active {
 	color: var(--basic-black);
 	opacity: 1;
+	border-bottom: none;
 }
 
 .btn-up-down-sort {
